@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bora Pro Ar — Site Institucional
 
-## Getting Started
+Site institucional da **Bora Pro Ar**, agência digital que cria sites para
+pequenas e médias empresas. O próprio site funciona como portfólio vivo e
+como canal de geração de leads: todo contato termina em uma conversa no
+WhatsApp com mensagem já preenchida de acordo com o que o visitante escolheu.
 
-First, run the development server:
+## Destaques
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Widget de qualificação no hero** — o visitante responde algumas perguntas
+  com cliques (segmento, objetivo, tamanho do catálogo) e recebe a recomendação
+  do formato ideal: Site Express, Site Institucional Completo ou Ecossistema
+  Digital. Sem IA, sem backend: a recomendação vem de uma tabela de decisão.
+- **Planos com CTA específico** — cada plano abre o WhatsApp com uma mensagem
+  própria, então a conversa já começa sabendo o que o cliente quer.
+- **Portfólio com cases reais** — prints desktop e mobile dentro de mockups de
+  dispositivo, trocando automaticamente para o print mobile em telas pequenas.
+- **Responsivo de 320px a 1440px** — layout em "cartão flutuante" com header
+  fixo e menu hambúrguer abaixo de 1024px.
+- **SEO técnico** — páginas estáticas, metadata por rota, `sitemap.xml` e
+  `robots.txt` gerados pelo Next.js.
+
+## Páginas
+
+| Rota          | Conteúdo                                              |
+| ------------- | ----------------------------------------------------- |
+| `/`           | Hero com widget, planos, processo, portfólio e CTA    |
+| `/servicos`   | Detalhes dos planos e do Ecossistema Digital          |
+| `/portfolio`  | Cases completos com mockups                           |
+| `/sobre`      | História e quem está por trás da agência              |
+| `/faq`        | Perguntas frequentes                                  |
+| `/contato`    | Formulário que monta a mensagem e abre o WhatsApp     |
+
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router, todas as páginas estáticas)
+- React 19 + TypeScript
+- Tailwind CSS v4 com design tokens definidos em `src/app/globals.css`
+- `next/font` com JetBrains Mono e Inter
+- `lucide-react` para ícones (ícones de marca como SVG próprio)
+
+## Estrutura
+
+```
+src/
+├── app/            # rotas, layout, sitemap e robots
+├── components/
+│   ├── layout/     # Header, Footer, PageShell
+│   ├── sections/   # blocos das páginas (Hero, PricingSection...)
+│   ├── cards/      # cards de plano, portfólio, processo
+│   └── ui/         # Button, Badge, Container, ícones
+└── lib/
+    ├── site-data.ts   # textos, planos, FAQ e portfólio
+    └── constants.ts   # WhatsApp, Instagram, URL do site
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Todo o conteúdo editável (preços, textos, perguntas, cases) fica centralizado
+em `src/lib/site-data.ts`, então atualizar o site não exige mexer em componente.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Rodando localmente
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Requer Node.js 20 ou superior.
 
-## Learn More
+```bash
+npm install
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+O site sobe em [http://localhost:3000](http://localhost:3000).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Outros comandos:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint    # verificação de código
+npm run build   # build de produção
+npm run start   # serve o build de produção
+```
 
-## Deploy on Vercel
+## Autor
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por **Lucas Santana** — [Bora Pro Ar](https://instagram.com/boraproar).
