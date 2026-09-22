@@ -11,7 +11,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="relative z-50 border-b border-border bg-bg">
+    <header className="sticky top-0 z-50 border-b border-border bg-bg">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <Logo />
 

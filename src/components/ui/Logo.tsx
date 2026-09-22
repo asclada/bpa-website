@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export function LogoMark({ className = "" }: { className?: string }) {
   return (
@@ -15,9 +18,18 @@ export function LogoMark({ className = "" }: { className?: string }) {
 }
 
 export function Logo({ className = "" }: { className?: string }) {
+  const pathname = usePathname();
+
   return (
     <Link
       href="/"
+      onClick={(e) => {
+        // Link pra mesma rota não rola pro topo no App Router.
+        if (pathname === "/") {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }}
       className={`inline-flex items-center gap-2.5 ${className}`}
     >
       <LogoMark className="h-10 w-10 shrink-0 sm:h-12 sm:w-12" />

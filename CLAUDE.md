@@ -26,8 +26,10 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
 
 ## Decisões importantes
 
-- **Layout "cartão flutuante"** (`PageShell.tsx`) usa `overflow-hidden`, o que
-  quebra `position: sticky` — por isso o header não é sticky.
+- **Layout "cartão flutuante"** (`PageShell.tsx`) usa `overflow-clip` (não
+  `overflow-hidden`): recorta os cantos arredondados sem criar contêiner de
+  rolagem, o que permite o header ficar fixo (`sticky top-0`) com fundo sólido.
+  Trocar de volta pra `overflow-hidden` quebra o header fixo.
 - **Header**: menu desktop só a partir de `lg` (1024px); abaixo disso é hambúrguer
   (em 768px o menu completo não cabia e sobrepunha o botão).
 - **Botões** (`src/components/ui/Button.tsx`): cada variante tem hover com moldura
