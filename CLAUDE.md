@@ -51,7 +51,12 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
 
 - `SITE_URL` em `src/lib/constants.ts` está como `https://boraproar.com.br` —
   confirmar domínio real (afeta sitemap, robots e metadata).
-- Deploy ainda não feito; repositório sem remoto no GitHub.
+- Deploy feito na Vercel (conta `asclada`, projeto `bpa-website`), conectado ao
+  GitHub `asclada/bpa-website`: todo push em `master` publica em produção.
+  URL atual: https://bpa-website-sage.vercel.app (`bpa-website.vercel.app` é de
+  outra conta). Ver estado com `vercel ls bpa-website`.
+- Domínio próprio ainda não configurado na Vercel.
+- Nunca incluir Claude como co-autor em commits/PRs — só o Lucas é autor.
 
 ## Como descobrir o estado atual
 
@@ -65,6 +70,7 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
 
 ## Última atualização
 
-2026-09-22 — widget de qualificação no hero, prints reais do portfólio (HK
+2026-09-22 — README, remoção do Claude como co-autor do histórico e deploy
+na Vercel. Antes, na mesma data: widget de qualificação no hero, prints reais do portfólio (HK
 Advocacia e KLL Promotora), página Sobre com foto, número real de WhatsApp e
 auditoria de responsividade (320px a 1440px) para deploy.
