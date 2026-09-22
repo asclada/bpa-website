@@ -5,6 +5,8 @@ pequenas e médias empresas. O próprio site funciona como portfólio vivo e
 como canal de geração de leads: todo contato termina em uma conversa no
 WhatsApp com mensagem já preenchida de acordo com o que o visitante escolheu.
 
+**Site no ar:** [boraproar.com](https://boraproar.com)
+
 ## Destaques
 
 - **Widget de qualificação no hero** — o visitante responde algumas perguntas

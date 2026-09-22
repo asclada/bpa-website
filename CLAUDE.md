@@ -47,15 +47,15 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
 - Nunca somar classes Tailwind conflitantes via `className` (ex.: `py-3` sobre um
   size que já define `py`) — a ordem do CSS não garante qual vence.
 
-## Pendências antes/depois do deploy
+## Deploy e domínio
 
-- `SITE_URL` em `src/lib/constants.ts` está como `https://boraproar.com.br` —
-  confirmar domínio real (afeta sitemap, robots e metadata).
-- Deploy feito na Vercel (conta `asclada`, projeto `bpa-website`), conectado ao
-  GitHub `asclada/bpa-website`: todo push em `master` publica em produção.
-  URL atual: https://bpa-website-sage.vercel.app (`bpa-website.vercel.app` é de
-  outra conta). Ver estado com `vercel ls bpa-website`.
-- Domínio próprio ainda não configurado na Vercel.
+- Vercel (conta `asclada`, projeto `bpa-website`), conectado ao GitHub
+  `asclada/bpa-website`: todo push em `master` publica em produção. Ver estado
+  com `vercel ls bpa-website`.
+- Domínio: `boraproar.com` (comprado na GoDaddy; `boraproar.com.br` é de
+  terceiros). `SITE_URL` em `src/lib/constants.ts` aponta pra ele.
+  `www.boraproar.com` redireciona (308) pro domínio sem www. DNS fica na
+  GoDaddy — conferir configuração com `vercel domains inspect boraproar.com`.
 - Nunca incluir Claude como co-autor em commits/PRs — só o Lucas é autor.
 
 ## Como descobrir o estado atual

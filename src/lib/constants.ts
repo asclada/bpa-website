@@ -11,4 +11,4 @@ export const INSTAGRAM_HANDLE = "@boraproar";
 export const INSTAGRAM_URL = "https://instagram.com/boraproar";
 
 export const SITE_NAME = "Bora Pro Ar";
-export const SITE_URL = "https://boraproar.com.br";
+export const SITE_URL = "https://boraproar.com";
