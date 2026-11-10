@@ -33,14 +33,19 @@ export function Logo({ className = "" }: { className?: string }) {
       className={`inline-flex items-center gap-2.5 ${className}`}
     >
       <LogoMark className="h-10 w-10 shrink-0 sm:h-12 sm:w-12" />
-      <Image
-        src="/logo-wordmark.png"
-        alt="Bora Pro Ar"
-        width={708}
-        height={115}
-        className="h-6 w-auto sm:h-7"
-        priority
-      />
+      <span className="flex flex-col gap-1">
+        <Image
+          src="/logo-wordmark.png"
+          alt="Bora Pro Ar"
+          width={708}
+          height={115}
+          className="h-6 w-auto sm:h-7"
+          priority
+        />
+        <span className="font-heading text-[9px] leading-none tracking-wide text-text-secondary uppercase sm:text-[10px]">
+          Criação de Sites e Sistemas
+        </span>
+      </span>
     </Link>
   );
 }

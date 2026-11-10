@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Bora Pro Ar — Sites institucionais e express",
+    default: "Bora Pro Ar - Criação de Sites e Sistemas",
     template: "%s | Bora Pro Ar",
   },
   description:

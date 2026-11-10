@@ -44,6 +44,13 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
   `public/portfolio/`; `DeviceMockup` troca pelo print mobile abaixo de `sm`.
   Na home os cases são cards verticais (`PortfolioCard`); em `/portfolio` são
   blocos horizontais (`PortfolioCaseHorizontal`). Cards abrem o site real do cliente.
+- **Nome público: "Bora Pro Ar - Criação de Sites e Sistemas"**. Só "Bora Pro Ar"
+  não diz o que a empresa faz. O nome completo tem que ser idêntico em todos os
+  canais (Perfil da Empresa no Google, site, WhatsApp Business, Instagram,
+  assinatura de email), senão o Google trata o descritivo como palavra-chave no
+  nome e pode suspender o perfil. No site aparece no `<title>` (`layout.tsx`), na
+  linha abaixo do wordmark (`Logo.tsx`, no header e no footer) e no copyright. A
+  logo em imagem continua só "BORA PRO AR"; nos textos corridos segue "Bora Pro Ar".
 - Nunca somar classes Tailwind conflitantes via `className` (ex.: `py-3` sobre um
   size que já define `py`) — a ordem do CSS não garante qual vence.
 
@@ -69,6 +76,11 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
 - Validar antes de commitar: `npm run lint` e `npm run build`
 
 ## Última atualização
+
+2026-11-10 — nome público passa a ser "Bora Pro Ar - Criação de Sites e Sistemas"
+(título, header, footer). Fora do código, na mesma data: email corporativo na Zoho
+(`lucas@` com alias `contato@boraproar.com`, DNS na GoDaddy) e Perfil da Empresa
+no Google em criação, na conta `contato@`.
 
 2026-09-22 — README, remoção do Claude como co-autor do histórico e deploy
 na Vercel. Antes, na mesma data: widget de qualificação no hero, prints reais do portfólio (HK

@@ -60,7 +60,7 @@ export function Footer() {
 
       <div className="border-t border-border px-5 py-6 sm:px-8">
         <p className="mx-auto max-w-6xl text-xs text-text-secondary">
-          © {year} Bora Pro Ar. Todos os direitos reservados.
+          © {year} Bora Pro Ar - Criação de Sites e Sistemas. Todos os direitos reservados.
         </p>
       </div>
     </footer>
