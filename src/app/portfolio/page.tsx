@@ -6,9 +6,10 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { portfolioItems } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Portfólio",
+  title: "Portfólio de Sites",
   description:
-    "Cases reais entregues pela Bora Pro Ar, com destaque para o ecossistema digital da HK Advocacia e da KLL Promotora.",
+    "Sites criados pela Bora Pro Ar para empresas de Natal/RN, como HK Advocacia e KLL Promotora: site institucional, agente de IA no WhatsApp e CRM sob medida.",
+  alternates: { canonical: "/portfolio" },
 };
 
 export default function PortfolioPage() {

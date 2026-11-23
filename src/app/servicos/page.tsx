@@ -9,9 +9,10 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { homeFaq } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Serviços",
+  title: "Preços de Criação de Sites em Natal",
   description:
-    "Site Express e Site Institucional Completo: prazos, rodadas de ajuste e o que está incluso na mensalidade.",
+    "Site Express por R$ 999 e Site Institucional Completo por R$ 1.499, com hospedagem, manutenção e site preparado para o Google. Criação de sites em Natal/RN e online.",
+  alternates: { canonical: "/servicos" },
 };
 
 const maintenanceIncludes = [
@@ -36,6 +37,7 @@ const servicesFaq = homeFaq.filter((item) =>
     "Quantos ajustes posso pedir?",
     "Qual a diferença entre Express e Completo?",
     "O que é SEO?",
+    "Meu site vai aparecer no Google?",
     "E se eu quiser parar de pagar a mensalidade?",
   ].includes(item.question),
 );

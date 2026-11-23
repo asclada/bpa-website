@@ -15,7 +15,8 @@ import { pricingPlans } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Contato",
   description:
-    "Fale com a Bora Pro Ar pelo WhatsApp ou Instagram e peça seu site institucional ou express.",
+    "Fale com a Bora Pro Ar pelo WhatsApp ou Instagram e peça seu site institucional ou express. Atendimento em Natal/RN e online para todo o Brasil.",
+  alternates: { canonical: "/contato" },
 };
 
 export default function ContatoPage() {

@@ -11,6 +11,8 @@ export type PricingPlan = {
   name: string;
   tagline: string;
   price: string;
+  /** Valor numérico em BRL, usado nos dados estruturados (LocalBusiness) */
+  amount: number;
   recurrence: string;
   bullets: string[];
   highlight?: boolean;
@@ -24,11 +26,14 @@ export const pricingPlans: PricingPlan[] = [
     name: "Site Express",
     tagline: "Página única, direto ao ponto",
     price: "R$ 999",
+    amount: 999,
     recurrence: "+ R$ 49,90/mês (hospedagem e manutenção)",
     bullets: [
       "Página única com scroll",
       "Pronto em até 5 dias úteis",
       "2 rodadas de ajustes",
+      "Preparado e cadastrado no Google",
+      "Conectado ao seu perfil no Google Maps",
       "Hospedagem e manutenção inclusas",
     ],
     ctaLabel: "Quero o Express",
@@ -40,10 +45,12 @@ export const pricingPlans: PricingPlan[] = [
     name: "Site Institucional Completo",
     tagline: "Multi-página, feito pra ranquear",
     price: "R$ 1.499",
+    amount: 1499,
     recurrence: "+ R$ 49,90/mês (hospedagem e manutenção)",
     bullets: [
       "Até 5 páginas com rotas próprias",
-      "Melhor para SEO",
+      "Cada página preparada para o Google",
+      "Perfil no Google criado ou otimizado",
       "Pronto em até 10 dias úteis",
       "4 rodadas de ajustes",
       "Hospedagem e manutenção inclusas",
@@ -136,6 +143,11 @@ export const homeFaq = [
       "Site Express: até 5 dias úteis. Site Institucional Completo: até 10 dias úteis. O prazo começa a contar a partir da aprovação da direção visual.",
   },
   {
+    question: "Você atende só em Natal?",
+    answer:
+      "Não. Estou em Natal/RN e atendo empresas de Natal e região, mas todo o processo é online — WhatsApp e chamada de vídeo —, então dá pra fazer o seu site de qualquer cidade do Brasil.",
+  },
+  {
     question: "Quantos ajustes posso pedir?",
     answer:
       "Express: 2 rodadas de ajustes. Completo: 4 rodadas de ajustes. Cada rodada é um conjunto de alterações dentro do escopo original — trocar textos, imagens, corrigir informações, ajustar ordem ou detalhes pequenos.",
@@ -149,6 +161,11 @@ export const homeFaq = [
     question: "O que é SEO?",
     answer:
       "SEO é o conjunto de técnicas que ajuda seu site a aparecer nas primeiras posições do Google quando alguém pesquisa algo relacionado ao seu negócio — tipo 'dentista em Natal' ou 'advogado trabalhista perto de mim'. Quanto melhor o SEO, mais gente encontra seu site de graça, sem você pagar por anúncio. O Site Institucional Completo é mais forte nisso porque cada página pode ranquear por uma palavra-chave diferente.",
+  },
+  {
+    question: "Meu site vai aparecer no Google?",
+    answer:
+      "Todo site sai preparado pra isso: títulos e textos pensados pra quem pesquisa o seu serviço na sua cidade (tipo 'instalação de ar-condicionado em Natal'), cadastro do site no Google e conexão com o seu perfil no Google Maps. No Completo, também crio ou otimizo o seu Perfil da Empresa no Google. A posição exata depende da concorrência e das avaliações do seu negócio — por isso ninguém sério promete primeiro lugar —, mas o seu site sai do jeito certo pra disputar.",
   },
   {
     question: "E se eu quiser parar de pagar a mensalidade?",

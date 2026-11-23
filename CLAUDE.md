@@ -51,6 +51,17 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
   nome e pode suspender o perfil. No site aparece no `<title>` (`layout.tsx`), na
   linha abaixo do wordmark (`Logo.tsx`, no header e no footer) e no copyright. A
   logo em imagem continua só "BORA PRO AR"; nos textos corridos segue "Bora Pro Ar".
+- **SEO local**: "Natal/RN" aparece no `<title>` da home, no badge e no texto do
+  hero, no rodapé e nas descrições das páginas (cada página tem `canonical`
+  próprio). O slogan "Sites que parecem caros" continua como H1. Dados
+  estruturados em `src/components/StructuredData.tsx` (ProfessionalService +
+  WebSite no layout, FAQPage em `/faq`), com `sameAs` ligando Instagram e o
+  Perfil da Empresa no Google (`GOOGLE_BUSINESS_URL` em `constants.ts`). Nome,
+  telefone, cidades e horário ali têm que bater com o Perfil da Empresa.
+  Imagem de compartilhamento: `public/og-image.jpg` (recorte da capa do perfil).
+- Os pacotes listam os entregáveis de SEO em linguagem leiga ("Preparado e
+  cadastrado no Google", "Perfil no Google criado ou otimizado"); nunca usar
+  "Search Console"/"sitemap" no texto do site nem prometer posição no Google.
 - Nunca somar classes Tailwind conflitantes via `className` (ex.: `py-3` sobre um
   size que já define `py`) — a ordem do CSS não garante qual vence.
 
@@ -76,6 +87,12 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
 - Validar antes de commitar: `npm run lint` e `npm run build`
 
 ## Última atualização
+
+2026-11-23 — SEO local do site (Natal/RN, dados estruturados, canonical, imagem
+de compartilhamento, entregáveis de SEO nos pacotes, 2 perguntas novas no FAQ).
+Fora do código, na mesma data: Perfil da Empresa no Google com logo, mockups,
+9 serviços e 2 produtos (arquivos em `../google-perfil/`). Próximas etapas:
+Search Console/Bing e visibilidade em IAs.
 
 2026-11-10 — nome público passa a ser "Bora Pro Ar - Criação de Sites e Sistemas"
 (título, header, footer). Fora do código, na mesma data: email corporativo na Zoho

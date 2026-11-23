@@ -16,6 +16,10 @@ export function Footer() {
           <p className="mt-4 text-sm text-text-secondary">
             Sites que parecem caros. Preço que não é.
           </p>
+          <p className="mt-2 text-sm text-text-secondary">
+            Criação de sites e sistemas em Natal/RN, com atendimento online
+            para todo o Brasil.
+          </p>
         </div>
 
         <div className="flex flex-col gap-3">

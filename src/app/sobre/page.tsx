@@ -5,9 +5,10 @@ import { PageIntro } from "@/components/sections/PageIntro";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "Sobre",
+  title: "Sobre Lucas Santana",
   description:
-    "Conheça Lucas Santana, desenvolvedor por trás da Agência Digital Bora Pro Ar.",
+    "Conheça Lucas Santana, desenvolvedor em Natal/RN por trás da Bora Pro Ar: cada site e sistema feito pessoalmente, do primeiro rascunho à última linha de código.",
+  alternates: { canonical: "/sobre" },
 };
 
 export default function SobrePage() {
@@ -30,7 +31,7 @@ export default function SobrePage() {
 
             <div className="flex flex-col gap-5 text-text-secondary">
               <p className="text-lg text-text-primary sm:text-xl">
-                Sou Lucas Santana, desenvolvedor por trás da Agência Digital
+                Sou Lucas Santana, desenvolvedor em Natal/RN por trás da Agência Digital
                 &quot;Bora Pro Ar&quot;.
               </p>
               <p>

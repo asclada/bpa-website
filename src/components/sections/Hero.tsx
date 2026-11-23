@@ -10,7 +10,7 @@ export function Hero() {
       <Container>
         <div className="grid items-start gap-12 md:grid-cols-2 md:gap-10">
           <div className="flex flex-col items-start gap-6">
-            <Badge tone="accent">Sites institucionais &amp; express</Badge>
+            <Badge tone="accent">Criação de sites em Natal/RN</Badge>
 
             <h1 className="font-heading text-4xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
               Sites que{" "}
@@ -24,8 +24,9 @@ export function Hero() {
             </h1>
 
             <p className="max-w-md text-base text-text-secondary sm:text-lg">
-              Sites institucionais e express para negócios que querem ser
-              levados a sério online — feitos rápido, sem parecer genérico.
+              Sites institucionais e express para negócios de Natal e de todo
+              o Brasil que querem ser levados a sério online — feitos rápido,
+              sem parecer genérico.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
