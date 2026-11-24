@@ -20,10 +20,13 @@ export function PricingSection({
   eyebrow = "Preços",
   title = "Escolha o formato certo pro seu negócio",
   description = "Preço fechado, sem letra miúda. Os dois formatos já incluem hospedagem e manutenção básica.",
+  whatsappSource,
 }: {
   eyebrow?: string;
   title?: string;
   description?: string;
+  /** Página de origem (ex.: "sites para ar-condicionado"), citada na mensagem de WhatsApp */
+  whatsappSource?: string;
 }) {
   return (
     <section className="border-t border-border py-20 md:py-28">
@@ -38,7 +41,11 @@ export function PricingSection({
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {pricingPlans.map((plan) => (
-            <PricingCard key={plan.slug} plan={plan} />
+            <PricingCard
+              key={plan.slug}
+              plan={plan}
+              whatsappSource={whatsappSource}
+            />
           ))}
         </div>
 

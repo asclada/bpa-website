@@ -1,14 +1,18 @@
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
+import type { ReactNode } from "react";
 
 export function PageIntro({
   eyebrow,
   title,
   description,
+  children,
 }: {
   eyebrow: string;
-  title: string;
+  title: ReactNode;
   description?: string;
+  /** Conteúdo extra abaixo da descrição (ex.: botões) */
+  children?: ReactNode;
 }) {
   return (
     <section className="pt-16 pb-4 sm:pt-20">
@@ -23,6 +27,7 @@ export function PageIntro({
               {description}
             </p>
           )}
+          {children}
         </div>
       </Container>
     </section>

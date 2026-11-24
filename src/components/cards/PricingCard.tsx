@@ -4,8 +4,17 @@ import { Badge } from "@/components/ui/Badge";
 import { buildWhatsappLink } from "@/lib/constants";
 import type { PricingPlan } from "@/lib/site-data";
 
-export function PricingCard({ plan }: { plan: PricingPlan }) {
+export function PricingCard({
+  plan,
+  whatsappSource,
+}: {
+  plan: PricingPlan;
+  whatsappSource?: string;
+}) {
   const light = plan.highlight;
+  const message = whatsappSource
+    ? `Oi! Vim pela página de ${whatsappSource} e quero saber mais sobre o ${plan.name} (${plan.price} + R$ 49,90/mês).`
+    : plan.whatsappMessage;
 
   return (
     <div
@@ -53,7 +62,7 @@ export function PricingCard({ plan }: { plan: PricingPlan }) {
       </ul>
 
       <Button
-        href={buildWhatsappLink(plan.whatsappMessage)}
+        href={buildWhatsappLink(message)}
         variant={light ? "dark-accent" : "primary"}
         size="lg"
         className="mt-8 w-full"

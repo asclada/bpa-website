@@ -20,7 +20,8 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
   recortada da logo oficial), não fonte
 - Ícones: `lucide-react` 1.x **não tem ícones de marca** — ficam em
   `src/components/ui/icons/` como SVG próprio
-- Rotas: `/`, `/servicos`, `/portfolio`, `/sobre`, `/faq`, `/contato`
+- Rotas: `/`, `/servicos`, `/portfolio`, `/sobre`, `/faq`, `/contato` e páginas
+  por segmento em `/sites/<nicho>` (`/sites` sozinho redireciona pra `/servicos`)
 - Sem backend: todo contato vira link `wa.me` pré-preenchido (`buildWhatsappLink`
   em `src/lib/constants.ts`)
 
@@ -62,6 +63,14 @@ e `../guias-claude-code/02-briefing-claude-code.md` (fora deste repo).
 - Os pacotes listam os entregáveis de SEO em linguagem leiga ("Preparado e
   cadastrado no Google", "Perfil no Google criado ou otimizado"); nunca usar
   "Search Console"/"sitemap" no texto do site nem prometer posição no Google.
+- **Páginas por segmento** (`/sites/<nicho>`): conteúdo em `niches` (`src/lib/niches.ts`),
+  layout único em `NichePage.tsx`, rota em `src/app/sites/<nicho>/page.tsx`. Entram
+  sozinhas no sitemap, no rodapé e no card de Serviços. Cada uma tem FAQ próprio
+  (FAQPage) e mensagens de WhatsApp que dizem de qual página o lead veio. Só criar
+  nicho com conteúdo real do segmento (dores, seções, FAQ); nada de copiar trocando
+  só o nome. Ordem: nichos da prospecção primeiro (começou por ar-condicionado).
+  O endereço é `/sites/...` (e não `/ar-condicionado`) pra não confundir com o nome
+  da marca "Bora Pro Ar".
 - Nunca somar classes Tailwind conflitantes via `className` (ex.: `py-3` sobre um
   size que já define `py`) — a ordem do CSS não garante qual vence.
 

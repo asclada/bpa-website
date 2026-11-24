@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Check, X } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Check, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PageIntro } from "@/components/sections/PageIntro";
@@ -7,6 +8,7 @@ import { PricingSection } from "@/components/sections/PricingSection";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { homeFaq } from "@/lib/site-data";
+import { nichePath, niches } from "@/lib/niches";
 
 export const metadata: Metadata = {
   title: "Preços de Criação de Sites em Natal",
@@ -56,6 +58,34 @@ export default function ServicosPage() {
         title="Express vs. Completo"
         description="Os dois incluem hospedagem, manutenção básica e suporte direto comigo."
       />
+
+      <section className="border-t border-border py-20 md:py-28">
+        <Container>
+          <SectionHeading
+            eyebrow="Segmentos"
+            title="Sites por segmento"
+            description="Páginas com o que o site precisa ter pra cada tipo de negócio."
+          />
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {niches.map((niche) => (
+              <Link
+                key={niche.slug}
+                href={nichePath(niche)}
+                className="card-hover group flex flex-col gap-3 rounded-2xl border border-border bg-surface p-7"
+              >
+                <h3 className="font-heading text-lg font-bold text-text-primary">
+                  Site para {niche.label.toLowerCase()}
+                </h3>
+                <p className="text-sm text-text-secondary">{niche.summary}</p>
+                <span className="mt-auto flex items-center gap-1.5 pt-2 text-sm font-medium text-accent-muted transition-colors group-hover:text-accent">
+                  Ver página
+                  <ArrowRight size={16} />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </section>
 
       <section className="border-t border-border py-20 md:py-28">
         <Container>

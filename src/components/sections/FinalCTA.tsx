@@ -5,9 +5,13 @@ import { ArrowRight } from "lucide-react";
 export function FinalCTA({
   title = "Vamos colocar seu site no ar?",
   description = "Conversa inicial rápida, sem compromisso. Você sai sabendo exatamente o formato e o prazo ideais pro seu negócio.",
+  href = "/contato",
+  buttonLabel = "Quero meu site",
 }: {
   title?: string;
   description?: string;
+  href?: string;
+  buttonLabel?: string;
 }) {
   return (
     <section className="py-20 md:py-28">
@@ -19,8 +23,8 @@ export function FinalCTA({
           <p className="max-w-md text-base text-text-secondary">
             {description}
           </p>
-          <Button href="/contato" size="lg">
-            Quero meu site
+          <Button href={href} size="lg">
+            {buttonLabel}
             <ArrowRight size={18} />
           </Button>
         </div>

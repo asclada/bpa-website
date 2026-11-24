@@ -3,6 +3,7 @@ import { MessageCircle } from "lucide-react";
 import { InstagramIcon } from "@/components/ui/icons/InstagramIcon";
 import { Logo } from "@/components/ui/Logo";
 import { navLinks } from "@/lib/site-data";
+import { nichePath, niches } from "@/lib/niches";
 import { buildWhatsappLink, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/constants";
 
 export function Footer() {
@@ -33,6 +34,21 @@ export function Footer() {
               className="text-sm text-text-secondary transition-colors hover:text-text-primary"
             >
               {link.label}
+            </Link>
+          ))}
+        </div>
+
+        <div className="flex flex-col gap-3">
+          <span className="text-xs font-medium tracking-wide text-text-secondary uppercase">
+            Sites por segmento
+          </span>
+          {niches.map((niche) => (
+            <Link
+              key={niche.slug}
+              href={nichePath(niche)}
+              className="text-sm text-text-secondary transition-colors hover:text-text-primary"
+            >
+              {niche.label}
             </Link>
           ))}
         </div>
