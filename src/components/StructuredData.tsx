@@ -2,6 +2,7 @@ import {
   BUSINESS_NAME,
   GOOGLE_BUSINESS_URL,
   INSTAGRAM_URL,
+  LINKEDIN_URL,
   PHONE_E164,
   SITE_URL,
 } from "@/lib/constants";
@@ -61,7 +62,7 @@ const businessData = {
         closes: "17:00",
       },
       founder: { "@type": "Person", name: "Lucas Santana" },
-      sameAs: [INSTAGRAM_URL, GOOGLE_BUSINESS_URL],
+      sameAs: [INSTAGRAM_URL, LINKEDIN_URL, GOOGLE_BUSINESS_URL],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Criação de sites",

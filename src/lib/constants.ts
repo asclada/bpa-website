@@ -18,3 +18,4 @@ export const SITE_URL = "https://boraproar.com";
 export const PHONE_E164 = `+${WHATSAPP_NUMBER}`;
 // Link oficial de compartilhamento do Perfil da Empresa no Google
 export const GOOGLE_BUSINESS_URL = "https://share.google/yF7a1JWfXCegg6U4r";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/boraproar";
