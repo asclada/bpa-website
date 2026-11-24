@@ -47,13 +47,13 @@ export const niches: Niche[] = [
     label: "Ar-condicionado",
     summary:
       "Orçamento pelo WhatsApp, serviços, PMOC e bairros atendidos — pra empresas e técnicos autônomos.",
-    metaTitle: "Site para Empresas de Ar-Condicionado em Natal",
+    metaTitle: "Site para Empresas de Ar-Condicionado em Natal/RN",
     metaDescription:
       "Site para empresas e técnicos de instalação e manutenção de ar-condicionado em Natal/RN, com orçamento pelo WhatsApp e pronto para o Google. Desde R$ 999.",
     eyebrow: "Ar-condicionado",
-    title: ["Site para empresas e técnicos de", "ar-condicionado em Natal"],
+    title: ["Site para empresas e técnicos de", "ar-condicionado em Natal/RN"],
     intro:
-      "Quando o calor aperta, o cliente pesquisa no Google e chama quem passa mais confiança. Um site profissional faz isso por você e leva o pedido de orçamento direto pro seu WhatsApp. Atendo Natal e todo o Brasil.",
+      "Quando o calor aperta, o cliente pesquisa no Google e chama quem passa mais confiança. Um site profissional faz isso por você e leva o pedido de orçamento direto pro seu WhatsApp. Atendo Natal/RN e todo o Brasil.",
     pains: {
       eyebrow: "O problema",
       title: "Cliente com calor não espera",
@@ -164,7 +164,7 @@ export const niches: Niche[] = [
           "Ele sai preparado pra isso: textos pensados pra buscas como \"instalação de ar-condicionado em Natal\", cadastro do site no Google e conexão com o seu perfil no Google Maps. A posição exata depende da concorrência e das suas avaliações — por isso ninguém sério promete primeiro lugar.",
       },
       {
-        question: "Você atende empresas de fora de Natal?",
+        question: "Você atende empresas de fora de Natal/RN?",
         answer:
           "Sim. Estou em Natal/RN, mas o processo é todo online, então faço sites pra empresas de ar-condicionado de qualquer cidade do Brasil.",
       },

@@ -143,7 +143,7 @@ export const homeFaq = [
       "Site Express: até 5 dias úteis. Site Institucional Completo: até 10 dias úteis. O prazo começa a contar a partir da aprovação da direção visual.",
   },
   {
-    question: "Você atende só em Natal?",
+    question: "Você atende só em Natal/RN?",
     answer:
       "Não. Estou em Natal/RN e atendo empresas de Natal e região, mas todo o processo é online — WhatsApp e chamada de vídeo —, então dá pra fazer o seu site de qualquer cidade do Brasil.",
   },

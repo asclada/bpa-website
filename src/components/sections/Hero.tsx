@@ -24,7 +24,7 @@ export function Hero() {
             </h1>
 
             <p className="max-w-md text-base text-text-secondary sm:text-lg">
-              Sites institucionais e express para negócios de Natal e de todo
+              Sites institucionais e express para negócios de Natal/RN e de todo
               o Brasil que querem ser levados a sério online — feitos rápido,
               sem parecer genérico.
             </p>

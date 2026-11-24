@@ -11,7 +11,7 @@ import { homeFaq } from "@/lib/site-data";
 import { nichePath, niches } from "@/lib/niches";
 
 export const metadata: Metadata = {
-  title: "Preços de Criação de Sites em Natal",
+  title: "Preços de Criação de Sites em Natal/RN",
   description:
     "Site Express por R$ 999 e Site Institucional Completo por R$ 1.499, com hospedagem, manutenção e site preparado para o Google. Criação de sites em Natal/RN e online.",
   alternates: { canonical: "/servicos" },
